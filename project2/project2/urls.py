@@ -20,4 +20,7 @@ from first_app import views
 urlpatterns = [
     url('^$',views.index,name='index'),
     url('admin/', admin.site.urls),
+    url('home/',views.home,name='home'),
+    url('balance/',views.balance,name='balance'),
+    url('payment/',views.payment,name='payment'),
 ]
